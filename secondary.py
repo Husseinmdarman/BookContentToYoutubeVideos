@@ -50,9 +50,11 @@ class scrapebook():
         return table_of_content 
 
 
-scarpethis = scrapebook(9781617295980)
-scarpethis.loadwebpage()
-table_of_content = scarpethis.soupingthecontent()
-print(table_of_content)
 
+
+if __name__ == "__main__":
+    scarpethis = scrapebook(9781617295980)
+    scarpethis.loadwebpage()
+    table_of_content = scarpethis.soupingthecontent()
+    print(table_of_content)
 
