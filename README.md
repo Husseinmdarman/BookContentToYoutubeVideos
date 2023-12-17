@@ -25,5 +25,9 @@ Alongside perligo scraper there is a datacleaner.py which is responsible for cle
 1. Looking at the table of content of a particular book what we don't want is anything after the other books you may enjoy section so it removes that from the contents Hence inspired strip_other_books method
 2. Strip preface and introduction from table of content, which is the strip_preface_introduction method
 3. Remove anything after and including the appendix from the table of content, which is remove_appendix_from_list
-4.  Remove chapter and section from title chapters in table of content for example 'chapter 9. memory managment' would be outputted as 'memory managment' remove_chapter_section_from_str method 
+4.  Remove chapter and section from title chapters in table of content for example 'chapter 9. memory managment' would be outputted as 'memory managment' remove_chapter_section_from_str method
+
+# Youtube API
+
+# google scholar scraper
 
