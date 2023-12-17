@@ -1,4 +1,3 @@
-#%%
 import googleapiclient.discovery
 import googleapiclient.errors
 import constants
@@ -57,5 +56,3 @@ class youtube_videos():
 if __name__ == "__main__":
    search = youtube_videos.youtube_search_book_content(['genetic algorithms', 'Search problems']) 
    print(search)
-
-# %%

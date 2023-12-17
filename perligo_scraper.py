@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-import datacleaner
 
 class scrapebook():
     
@@ -45,15 +44,5 @@ class scrapebook():
         for x in results:
             table_of_content.append(x.text)
         return table_of_content 
-    
-if __name__ == "__main__":
-    scarpethis = scrapebook(9781617295980)
-    scarpethis.loadwebpage()
-    table_of_content = scarpethis.soupingthecontent()
-    data = datacleaner.strip_other_books(table_of_content)
-    data = datacleaner.remove_appendix_from_list(data)
-    data = datacleaner.remove_chapter_section_from_str(data)
-    data = datacleaner.strip_preface_introduction(data)
-    print(data)
 
 
