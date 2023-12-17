@@ -57,4 +57,3 @@ class ScholarScraper():
            data.append(href_object.get_attribute('href'))
         
         return data
-            
