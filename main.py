@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Path
 from typing import Annotated
 import data_conslidator
-
+from mangum import Mangum
 
 
 app = FastAPI()
-
+handler = Mangum(app)
 
 @app.get("/")
 async def root():
